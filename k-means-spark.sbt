@@ -1,3 +1,5 @@
 name := "hello"
 version := "1.0"
-scalaVersion := "2.11.12"
+scalaVersion := "2.12.11"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.0" % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-mllib" % "2.4.0" % "provided"
