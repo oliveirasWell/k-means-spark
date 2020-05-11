@@ -2,9 +2,9 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.ml.clustering.KMeans
 import org.apache.spark.ml.evaluation.ClusteringEvaluator
 
-object KMeansExample {
+object KMeansSpark {
 
-  def main(args: Array[String]): Unit = {
+  def sparkExampleMain(args: Array[String]): Unit = {
     val spark = SparkSession
       .builder
       .appName(s"${this.getClass.getSimpleName}")
@@ -32,7 +32,15 @@ object KMeansExample {
     println(model.clusterCenters)
     model.clusterCenters.foreach(println)
     // $example off$
-
     spark.stop()
   }
+
+  def main(args: Array[String]) {
+    print("\n\n>>>>> START OF PROGRAM <<<<<\n\n");
+
+    println("Hello World.")
+
+    print("\n\n>>>>> END OF PROGRAM <<<<<\n\n");
+  }
+
 }
