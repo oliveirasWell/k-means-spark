@@ -22,5 +22,5 @@ Use the command `sbt package`
 I recommend you to build and run at the same time using the following command:
 
 ```
-sbt package && spark-submit ./target/scala-2.12/hello_2.12-1.0.jar
+sbt clean && sbt package && spark-submit ./target/scala-2.12/hello_2.12-1.0.jar
 ```
